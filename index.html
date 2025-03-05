@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Self Components Demo</title>
+</head>
+<body>
+  <my-button variant="primary">Click me</my-button>
+  <br/>
+  <br/>
+  <my-badge position="top-right" variant="primary">
+    <span slot="content">3</span>
+    Notifications
+  </my-badge>
+  <br/>
+  <br/>
+  <br/>
+  <my-badge position="top-right" variant="success" style="--badge-bg: #4f46e5; margin-top:20px">
+    <span slot="content">!</span>
+    <span style="font-size: 17px;">success</span>
+  </my-badge>
+  <br/>
+  <br/>
+  <my-badge position="bottom-left" variant="warning" style="--badge-bg: #4f46e5; margin-top:20px">
+    <span slot="content">1</span>
+    <span style="font-size: 17px;">Warning</span>
+  </my-badge>
+  <br/>
+  <br/>
+  <my-badge position="bottom-right" variant="error" style="--badge-bg: #4f46e5; margin-top:20px">
+    <span slot="content">3</span>
+    <span style="font-size: 17px;">error</span>
+  </my-badge>
+  <script type="module" src="/dist/index.js"></script>
+</body>
+</html>
